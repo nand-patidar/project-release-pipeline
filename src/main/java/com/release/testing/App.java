@@ -1,9 +1,5 @@
 package com.release.testing;
 
-/**
- * Hello world!
- *
- */
 public class App 
 {
     public static void main( String[] args )
