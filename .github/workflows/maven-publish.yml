@@ -29,11 +29,5 @@ jobs:
       - name: Publish JAR
         run: mvn --batch-mode gitflow:release
         env:
-          GITHUB_TOKEN: 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    
-          
-      - name: Configure Git after release
-        run: |
-          git fetch origin
-          git checkout master
-          git pull   
+          GITHUB_TOKEN: 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  
       
