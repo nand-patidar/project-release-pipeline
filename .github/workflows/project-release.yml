@@ -23,10 +23,13 @@ jobs:
           git config user.email "nk.patidar01@gmail.com"
           git config user.name "nandkishore-patidar"         
           git fetch origin
+          git checkout develop
+          git reset --hard origin/develop
+          mvn --batch-mode gitflow:release
+          git fetch origin
           git checkout master
-          git reset --hard origin/master
-      - name: Publish JAR
-        run: mvn --batch-mode gitflow:release
+          git pull
+     
         env:
           GITHUB_TOKEN: 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
           
