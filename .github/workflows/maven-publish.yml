@@ -13,8 +13,11 @@ jobs:
       - uses: actions/checkout@v3
       - uses: actions/setup-java@v3
         with:
+          distribution: 'temurin'
           java-version: '11'
-          distribution: 'adopt'
+          cache: 'maven'
+          server-id: github    
+         
       - name: Configure Git user
         run: |
           git config user.email "nk.patidar01@gmail.com"
