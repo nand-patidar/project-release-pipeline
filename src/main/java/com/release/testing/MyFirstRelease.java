@@ -4,6 +4,6 @@ public class MyFirstRelease
 {
     public static void main( String[] args )
     {
-        System.out.println( "My First Release !" );
+        System.out.println( "My First Release!" );
     }
 }
