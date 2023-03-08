@@ -22,7 +22,7 @@ jobs:
         run: |
           git config user.email "nk.patidar01@gmail.com"
           git config user.name "nandkishore-patidar"
-          git --allow-unrelated-histories
+          git pull origin develop --allow-unrelated-histories
           
       - name: Publish JAR
         run: mvn --batch-mode gitflow:release
