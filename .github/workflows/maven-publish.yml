@@ -11,12 +11,16 @@ jobs:
       packages: write
     steps:
       - uses: actions/checkout@v3
-      - uses: nandkishore-patidar/nk.patidar01@gmail.com
       - uses: actions/setup-java@v3
         with:
           java-version: '11'
           distribution: 'adopt'
-      - name: Publish package
-        run: mvn --batch-mode gitflow:release
+      - name: Configure Git user
+        run: |
+          git config user.email "nk.patidar01@gmail.com"
+          git config user.name "nandkishore-patidar"
+      - name: Publish JAR
+        run: ./mvnw -B release:prepare release:perform
         env:
-          GITHUB_TOKEN: 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
+          GITHUB_TOKEN: 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    
+      
