@@ -23,8 +23,12 @@
 	  </repository>
 	</distributionManagement>
 	<scm>
-	  <developerConnection>scm:git@github.com:nandkishore-patidar/project-release-pipeline.git</developerConnection>
+		<url>https://github.com/nandkishore-patidar/project-release-pipeline</url>
+		<connection>scm:git:git://github.com/nandkishore-patidar/project-release-pipeline.git</connection>
+		<developerConnection>scm:git:git@github.com:nandkishore-patidar/project-release-pipeline.git</developerConnection>
+		<tag>HEAD</tag>
 	</scm>
+	
 	<profiles>
 		<!-- ====================================================== -->
 		<!-- A D O B E   P U B L I C   P R O F I L E                -->
