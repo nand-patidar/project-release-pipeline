@@ -25,5 +25,5 @@ jobs:
           mvn -B release:prepare release:perform         
      
         env:
-          GITHUB_TOKEN: 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
+          GITHUB_TOKEN: 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
           
