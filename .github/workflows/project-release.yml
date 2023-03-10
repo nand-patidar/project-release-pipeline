@@ -25,5 +25,6 @@ jobs:
           mvn -B release:prepare release:perform         
      
         env:
-          GITHUB_TOKEN: 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
+          GITHUB_TOKEN: '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'
+          known_hosts: 'nandkishore-patidar'
           
