@@ -21,11 +21,8 @@ jobs:
       - name: Configure Git user
         run: |
           git config user.email "nk.patidar01@gmail.com"
-          git config user.name "nandkishore-patidar"         
-          git fetch origin
-          git checkout develop
-          git reset --hard origin/develop
-          mvn --batch-mode gitflow:release
+          git config user.name "nandkishore-patidar" 
+          mvn -B release:prepare release:perform
           git fetch origin
           git checkout master
           git pull
