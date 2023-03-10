@@ -24,7 +24,6 @@
 	</distributionManagement>
 	<scm>
 	  <developerConnection>scm:git:https://github.com/nandkishore-patidar/project-release-pipeline.git</developerConnection>
-	  <tag>github-release-testing-1.0.2</tag>
 	</scm>
 	<profiles>
 		<!-- ====================================================== -->
@@ -73,7 +72,7 @@
 						<releaseBranchPrefix>release/</releaseBranchPrefix>
 						<hotfixBranchPrefix>hotfix/</hotfixBranchPrefix>
 						<supportBranchPrefix>support/</supportBranchPrefix>
-						<versionTagPrefix />
+						<versionTagPrefix></versionTagPrefix>
 						<origin>origin</origin>
 					</gitFlowConfig>
 
