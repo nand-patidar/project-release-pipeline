@@ -24,7 +24,7 @@
 	</distributionManagement>
 	<scm>		
 		<developerConnection>scm:git:git@github.com:nandkishore-patidar/project-release-pipeline.git</developerConnection>		
-	  <tag>github-release-testing-1.0.2</tag>
+	  <tag>github-release-testing-1.0.2-SNAPSHOT</tag>
   </scm>
 	
 	
