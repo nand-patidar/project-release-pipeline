@@ -19,11 +19,11 @@
 	  <repository>
 		<id>github</id>
 		<name>GitHub</name>
-		<url>https://github.com/nandkishore-patidar/project-release-pipeline</url>  
+		<url>git@github.com:nandkishore-patidar/project-release-pipeline.git</url>  
 	  </repository>
 	</distributionManagement>
 	<scm>
-	  <developerConnection>scm:git:https://github.com/nandkishore-patidar/project-release-pipeline.git</developerConnection>
+	  <developerConnection>scm:git@github.com:nandkishore-patidar/project-release-pipeline.git</developerConnection>
 	</scm>
 	<profiles>
 		<!-- ====================================================== -->
