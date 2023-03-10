@@ -25,6 +25,7 @@ jobs:
           mvn -B release:prepare release:perform         
      
         env:
-          GITHUB_TOKEN: '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'
+        with:
+          ssh-private-key: ${{secret.PROJECT_RELEASE_PIPELINE_PRIVATE_KEY}}
           known_hosts: 'nand-patidar'
           
