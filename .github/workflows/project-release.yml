@@ -27,7 +27,7 @@ jobs:
       - name: Push changes
         uses: ad-m/github-push-action@master
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          github_token: ${{secret.PROJECT_RELEASE_PIPELINE_PRIVATE_KEY}}
           branch: master
       - uses: fastify/github-action-merge-dependabot@v2.1.1
         with:
