@@ -28,7 +28,7 @@ jobs:
         uses: ad-m/github-push-action@master
         with:
           github_token: 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
-          branch: master
+          branch: develop
       - uses: fastify/github-action-merge-dependabot@v2.1.1
         with:
           github-token:  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
