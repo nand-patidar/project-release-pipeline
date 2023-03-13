@@ -22,10 +22,17 @@ jobs:
         run: |
           git config user.email "nk.patidar01@gmail.com"
           git config user.name "nand-patidar"
-          mvn -B release:prepare release:perform         
-     
-        env:
+          mvn -B release:prepare release:perform    
+          
+      - name: Push changes
+        uses: ad-m/github-push-action@master
         with:
-          ssh-private-key: ${{secret.PROJECT_RELEASE_PIPELINE_PRIVATE_KEY}}
-          known_hosts: 'nand-patidar'
+          github_token: ${{secret.PROJECT_RELEASE_PIPELINE_PRIVATE_KEY}}
+          branch: master
+      - uses: fastify/github-action-merge-dependabot@v2.1.1
+        with:
+          github-token:  ${{secret.PROJECT_RELEASE_PIPELINE_PRIVATE_KEY}}
+     
+          
+          
           
