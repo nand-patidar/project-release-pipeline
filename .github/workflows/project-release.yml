@@ -27,11 +27,11 @@ jobs:
       - name: Push changes
         uses: ad-m/github-push-action@master
         with:
-          github_token: ${{secrets.PROJECT_RELEASE_PIPELINE_PRIVATE_KEY}}
-          branch: master
+          github_token: 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
+          branch: develop
       - uses: fastify/github-action-merge-dependabot@v2.1.1
         with:
-          github-token:  ${{secrets.PROJECT_RELEASE_PIPELINE_PRIVATE_KEY}}
+          github-token:  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
      
           
           
