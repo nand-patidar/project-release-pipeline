@@ -15,11 +15,15 @@ jobs:
       - uses: actions/setup-java@v3
       - uses: shimataro/ssh-key-action@v2
         with:
+          key: "${{ secrets.PRI_KEY }}"
           distribution: 'adopt'
           java-version: '11'         
           server-id: github    
           repo_token: "${{ secrets.PAT }}"  
-          key: "${{ secrets.PRI_KEY }}"
+          name: id_rsa # optional
+          known_hosts: ${{ secrets.KNOWN_HOSTS }}
+          config: ${{ secrets.CONFIG }}
+          
             
       - run: |
           git add   
