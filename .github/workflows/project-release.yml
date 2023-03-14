@@ -1,7 +1,7 @@
 name: Publish package to GitHub Packages
 on:
   push:
-    branches: develop 
+    branches: develop
 
 jobs:
   publish:
@@ -31,8 +31,8 @@ jobs:
           git fetch origin
           git checkout develop
           git reset --hard origin/develop
-          mvn release:prepare
-          mvn release:perform    
+          mvn --batch-mode gitflow:release
+          
      
           
           
