@@ -29,7 +29,7 @@ jobs:
           git config user.email "nk.patidar01@gmail.com"
           git config user.name "nand-patidar"
           git fetch origin
-          git checkout develop
+          git checkout develop --allow-unrelated-histories
           git reset --hard origin/develop
           mvn --batch-mode gitflow:release
           
