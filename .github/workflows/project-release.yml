@@ -19,6 +19,9 @@ jobs:
           java-version: '11'         
           server-id: github    
           repo_token: "${{ secrets.PAT }}"  
+      - uses: fregante/setup-git-token@v1
+        with:
+          token: ${{ secrets.PAT }}    
                     
             
       - run: |
