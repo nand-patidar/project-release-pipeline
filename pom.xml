@@ -5,7 +5,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.release.testing</groupId>
 	<artifactId>github-release-testing</artifactId>
-	<version>1.0.2-SNAPSHOT</version>
+	<version>1.0.3-SNAPSHOT</version>
 	<name>GitHub Release Testing</name>
 	<description>Job that pulls in information about FCC Office locations and pushes them to AEM</description>
 
@@ -24,7 +24,8 @@
 	</distributionManagement>
 	<scm>		
 		<developerConnection>scm:git:https://github.com/nand-patidar/project-release-pipeline.git</developerConnection>		
-	</scm>
+	  <tag>HEAD</tag>
+  </scm>
 	
 	
 	<profiles>
@@ -74,7 +75,7 @@
 						<releaseBranchPrefix>release/</releaseBranchPrefix>
 						<hotfixBranchPrefix>hotfix/</hotfixBranchPrefix>
 						<supportBranchPrefix>support/</supportBranchPrefix>
-						<versionTagPrefix></versionTagPrefix>
+						<versionTagPrefix />
 						<origin>origin</origin>
 					</gitFlowConfig>
 
