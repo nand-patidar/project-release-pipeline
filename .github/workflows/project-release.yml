@@ -19,8 +19,7 @@ jobs:
           java-version: '11'         
           server-id: github    
           repo_token: "${{ secrets.PAT }}"  
-          ssh-private-key: |
-                        ${{ secrets.PUB_KEY }}
+          ssh-private-key: "${{ secrets.PRI_KEY }}"
             
       - run: |
           git add   
